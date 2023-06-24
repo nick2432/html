@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>left panel</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="divider">
+  <div class="left">
+    <div class="menu-bar">
+    <ul>
+            <li onclick="homefunction()">Home</li>
+            <li onclick="contactFunction()">Contact</li>
+            <li onclick="informationFunction()">Information</li>
+            <li onclick="guideFunction()">Guide</li>
+    </ul>
+    </div>
+</div>
+<div class="right">
+    <div id="home">
+        welcom to home
+    </div>
+    <div id="Contact">
+        welcom to Contact
+    </div>
+    <div id="Information">
+        welcom to Information
+    </div>
+    <div id="Guide">
+        welcom to Guide
+    </div>
+</div>
+</div>
+<script>
+     function homefunction() {
+        const w= document.getElementById('home');
+        const x= document.getElementById('Contact');
+        const y= document.getElementById('Information');
+        const z= document.getElementById('Guide');
+        w.style.display='flex';
+        x.style.display='none';
+        y.style.display='none';
+        z.style.display='none';
+    }
+    function contactFunction() {
+        const w= document.getElementById('home');
+        const x= document.getElementById('Contact');
+        const y= document.getElementById('Information');
+        const z= document.getElementById('Guide');
+        w.style.display='none';
+        x.style.display='flex';
+        y.style.display='none';
+        z.style.display='none';
+    }
+    function informationFunction() {
+        const w= document.getElementById('home');
+        const x= document.getElementById('Contact');
+        const y= document.getElementById('Information');
+        const z= document.getElementById('Guide');
+        w.style.display='none';
+        x.style.display='none';
+        y.style.display='flex';
+        z.style.display='none';
+    }
+    function guideFunction() {
+        const w= document.getElementById('home');
+        const x= document.getElementById('Contact');
+        const y= document.getElementById('Information');
+        const z= document.getElementById('Guide');
+        w.style.display='none';
+        x.style.display='none';
+        y.style.display='none';
+        z.style.display='flex';
+    }
+</script>
+</body>
+</html>
